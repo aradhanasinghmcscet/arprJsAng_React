@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>PLP - product listing page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../src/js/products.js"></script> 
+<link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+<div class="header">
+<a href="#default" class="logo">CompanyLogo</a>
+<div class="header-right">
+<a class="active" href="#index">Products List</a>
+<a href="form.html">Form Validation</a>
+<input id="product" list="allProducts" />
+<datalist id="allProducts">
+    <option value="Category"/>  
+    <option value="Price"/>
+    <option value="Size"/>    
+</datalist>
+</div>
+</div>
+<div id="productsList" class="productContainer">
+</div>
+</div>
+</body>
+</html>
