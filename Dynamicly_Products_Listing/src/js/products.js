@@ -31,13 +31,14 @@ $(function() {
         product_data += '<div class="rating">'+value.size +'  <span class="star"> &#x2605; <span></div>'
    
     }
+    if(value.oldPrice && value.savings){
     product_data += '<div><span class="price">'+ value.price +'</span> <span class="oldprice">'+ value.oldPrice+'</span><span class="saving">You Save  ' + value.savings+'</span></div>';
-/* 
-  if(product_data.hasOwnProperty('savings') && product_data.hasOwnProperty('oldPrice')){
-    product_data += '<div><span class="price">'+ value.price +'</span> <span class="oldprice">'+ value.oldPrice+'</span><span class="saving">You Save  ' + value.savings+'</span></div>';
-}else{
-    product_data += '<div><span class="price">'+ value.price +'</span>';
-} */
+}
+else{
+    product_data += '<div><span class="price">'+ value.price +'</span> <span class="saving">You Save  0 </span></div>';
+
+}
+ 
     product_data += '</div>';
     product_data += '</a>';
     product_data += '</div>'; 
